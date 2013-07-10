@@ -7,8 +7,17 @@ follows:
 ```sh
 cd $HOME
 sudo apt-get install -y git-core
-git clone https://github.com/epylinkn/setup.git
-./setup/setup.sh   
+
+# setup git access
+ssh-keygen -t rsa -C "epylinkn@awsnode"
+cat ~/.ssh/id_rsa.pub
+##
+## NOW GO ADD THE KEY TO GITHUB
+##
+
+# finish setup
+git clone git@github.com:epylinkn/setup.git
+./setup/setup.sh
 ```
 
 
